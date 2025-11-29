@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -28,7 +29,7 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
-      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      
 
 
     
@@ -1056,14 +1057,13 @@
 <h2 id="mermaid">Диаграмма архитектуры (Mermaid)<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h2>
 <p>Ниже приведён пример диаграммы архитектуры мини-системы <strong>InvestCalc</strong> на Mermaid.<br />
 При подключённой поддержке Mermaid на сайте этот блок будет отображаться как схема.</p>
-   <div class="mermaid">
-        flowchart LR
-            Client[Клиент / браузер] --> API[REST API InvestCalc]
-            API --> Service[Сервис расчётов]
-            Service --> DB[(Хранилище данных ИС)]
-            Service --> Report[Модуль генерации отчетов]
-            API --> Docker[Контейнер Docker]
-    </div>
+<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
+<span class="w">    </span><span class="n">Client</span><span class="p">[</span><span class="err">Клиент</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="err">браузер</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">API</span><span class="p">[</span><span class="n">REST</span><span class="w"> </span><span class="n">API</span><span class="w"> </span><span class="n">InvestCalc</span><span class="p">]</span>
+<span class="w">    </span><span class="n">API</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="kr">Service</span><span class="p">[</span><span class="err">Сервис</span><span class="w"> </span><span class="err">расчётов</span><span class="p">]</span>
+<span class="w">    </span><span class="kr">Service</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DB</span><span class="p">[(</span><span class="err">Хранилище</span><span class="w"> </span><span class="err">данных</span><span class="w"> </span><span class="err">ИС</span><span class="p">)]</span>
+<span class="w">    </span><span class="kr">Service</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Report</span><span class="p">[</span><span class="err">Модуль</span><span class="w"> </span><span class="err">генерации</span><span class="w"> </span><span class="err">отчётов</span><span class="p">]</span>
+<span class="w">    </span><span class="n">API</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Docker</span><span class="p">[</span><span class="err">Контейнер</span><span class="w"> </span><span class="n">Docker</span><span class="p">]</span>
+</code></pre></div>
 
 <hr />
 <h2 id="_7">План демонстрации по занятиям<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
