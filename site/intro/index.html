@@ -23,13 +23,13 @@
     
     
       
-        <title>О практике - Методические рекомендации для группового проекта</title>
+        <title>О задаче - Методические рекомендации для группового проекта</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
-      
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 
 
     
@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#investcalc" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              О практике
+              О задаче
             
           </span>
         </div>
@@ -273,6 +278,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    О задаче
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -281,7 +306,7 @@
   <span class="md-ellipsis">
     
   
-    О практике
+    О задаче
   
 
     
@@ -290,6 +315,235 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Легенда проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Предметные области
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура проекта
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Структура проекта">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Серверная часть
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интерфейс или CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генератор отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub-репозиторий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финальная презентация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Диаграмма архитектуры (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        План демонстрации по занятиям
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="План демонстрации по занятиям">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 1 — Постановка задачи и разработка модели
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-api-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 2 — API и архитектура мини-ИС
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 3 — Анализ чувствительности, отчёт, Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 4 — Финальная сборка и презентации
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финальная презентация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Критерии оценивания
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Примечание для команд
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -328,7 +582,7 @@
   <span class="md-ellipsis">
     
   
-    Задания
+    Задание по дням
   
 
     
@@ -344,7 +598,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Задания
+    Задание по дням
   
 
           </label>
@@ -364,7 +618,7 @@
   <span class="md-ellipsis">
     
   
-    Задание 1
+    День 1
   
 
     
@@ -392,7 +646,7 @@
   <span class="md-ellipsis">
     
   
-    Задание 2
+    День 2
   
 
     
@@ -420,7 +674,7 @@
   <span class="md-ellipsis">
     
   
-    Задание 3
+    День 3
   
 
     
@@ -448,7 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Задание 4
+    День 4
   
 
     
@@ -486,6 +740,226 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Легенда проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Предметные области
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура проекта
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Структура проекта">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Серверная часть
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интерфейс или CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генератор отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub-репозиторий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финальная презентация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Диаграмма архитектуры (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        План демонстрации по занятиям
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="План демонстрации по занятиям">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 1 — Постановка задачи и разработка модели
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-api-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 2 — API и архитектура мини-ИС
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 3 — Анализ чувствительности, отчёт, Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Занятие 4 — Финальная сборка и презентации
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финальная презентация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Критерии оценивания
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Примечание для команд
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -502,9 +976,246 @@
 
 
 
-  <h1>О практике</h1>
+<h1 id="investcalc">Легенда проекта и структура InvestCalc<a class="headerlink" href="#investcalc" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Легенда проекта<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Команды представляют агентство цифрового консалтинга <strong>DataForge</strong>. К агентству обращаются компании, которым необходимо рассчитывать экономическую эффективность различных информационных систем: ERP, CRM, HelpDesk, сервисов бронирования, систем учёта, мобильных приложений и других решений.</p>
+<p>У DataForge отсутствует единая платформа для оценки окупаемости, поэтому команды создают сервис <strong>InvestCalc</strong>, который позволяет:</p>
+<ul>
+<li>вводить данные по системе;</li>
+<li>сравнивать локальные и облачные сценарии;</li>
+<li>рассчитывать чувствительность;</li>
+<li>формировать готовый аналитический отчёт (HTML/PDF);</li>
+<li>использовать сервис как внутренний продукт агентства.</li>
+</ul>
+<p><strong>Итог проекта:</strong> рабочий сервис, который можно показать «клиенту-заказчику».</p>
+<hr />
+<h2 id="_2">Предметные области<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Каждая команда выбирает свою <strong>тематическую область</strong>. Команда получает «клиента» из определённой отрасли, которому требуется рассчитать эффективность внедрения ИС.</p>
+<p>Предметная область:</p>
+<ul>
+<li>согласуется внутри команды;</li>
+<li>сообщается преподавателю;</li>
+<li>фиксируется в описании проекта (README / отчёт / презентация).</li>
+</ul>
+<hr />
+<h2 id="_3">Структура проекта<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">Серверная часть<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Реализуется минимальный <strong>REST API</strong> для расчётов:</p>
+<ul>
+<li><code>/calc/local</code> — расчёт показателей для локального сценария;</li>
+<li><code>/calc/cloud</code> — расчёт показателей для облачного сценария;</li>
+<li><code>/calc/sensitivity</code> — анализ чувствительности (±20%);</li>
+<li><code>/compare</code> — сравнение нескольких ИС и/или сценариев.</li>
+</ul>
+<p>Формулы берутся по шаблону <strong>лабораторной работы №6</strong>.</p>
+<h3 id="cli">Интерфейс или CLI<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h3>
+<p>Любой удобный вариант:</p>
+<ul>
+<li>веб-форма ввода данных (форма для параметров ИС);</li>
+<li>вывод таблиц с результатами;</li>
+<li>мини-дашборд с ключевыми метриками (TCO, ROI, Payback Period, рейтинг вариантов);</li>
+</ul>
+<p>или</p>
+<ul>
+<li>консольный интерфейс (CLI) с интерактивным вводом и выводом таблиц в текстовом виде.</li>
+</ul>
+<h3 id="_5">Генератор отчёта<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>формирование <strong>HTML-отчёта</strong> (обязательно);</li>
+<li>при желании — конвертация HTML → <strong>PDF</strong>;</li>
+<li>включение таблиц, графиков (опционально) и итоговой аналитики;</li>
+<li>краткие текстовые выводы по результатам сравнения.</li>
+</ul>
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Dockerfile</code> для приложения;</li>
+<li>при необходимости — <code>docker-compose.yml</code> (если есть база данных или несколько сервисов);</li>
+<li>инструкция по запуску контейнера.</li>
+</ul>
+<h3 id="github-">GitHub-репозиторий<a class="headerlink" href="#github-" title="Permanent link">&para;</a></h3>
+<ul>
+<li>продуманная структура проекта (папки <code>src/</code>, <code>docs/</code>, <code>docker/</code> и т.п.);</li>
+<li>файл <code>README.md</code> с описанием:</li>
+<li>что делает сервис;</li>
+<li>как его запустить (локально и через Docker);</li>
+<li>примеры запросов к API;</li>
+<li>пример входных данных;</li>
+<li>скриншоты интерфейса (если есть);</li>
+<li>оформленный <strong>релиз</strong> (release) или пометка тега финальной версии.</li>
+</ul>
+<h3 id="_6">Финальная презентация<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>Краткая презентация (примерно 8–10 слайдов):</p>
+<ul>
+<li>предметная область и «клиент»;</li>
+<li>модель расчёта (основные показатели);</li>
+<li>архитектура InvestCalc;</li>
+<li>результаты расчётов;</li>
+<li>анализ чувствительности;</li>
+<li>выводы и рекомендации.</li>
+</ul>
+<hr />
+<h2 id="mermaid">Диаграмма архитектуры (Mermaid)<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h2>
+<p>Ниже приведён пример диаграммы архитектуры мини-системы <strong>InvestCalc</strong> на Mermaid.<br />
+При подключённой поддержке Mermaid на сайте этот блок будет отображаться как схема.</p>
+   <div class="mermaid">
+        flowchart LR
+            Client[Клиент / браузер] --> API[REST API InvestCalc]
+            API --> Service[Сервис расчётов]
+            Service --> DB[(Хранилище данных ИС)]
+            Service --> Report[Модуль генерации отчетов]
+            API --> Docker[Контейнер Docker]
+    </div>
 
-
+<hr />
+<h2 id="_7">План демонстрации по занятиям<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1">Занятие 1 — Постановка задачи и разработка модели<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>Цели:</strong></p>
+<ul>
+<li>выбрать предметную область;</li>
+<li>определить бизнес-проблему «клиента»;</li>
+<li>собрать исходные данные;</li>
+<li>подготовить модели расчёта (по ЛР6).</li>
+</ul>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>таблица исходных данных (для локального и облачного сценария);</li>
+<li>сценарный анализ (варианты, допущения);</li>
+<li>черновая модель в Python / JavaScript (или другом языке).</li>
+</ul>
+<p><strong>Демонстрация:</strong></p>
+<ul>
+<li>представление предметной области и клиента;</li>
+<li>объяснение логики расчётов;</li>
+<li>файл с вычислениями (скрипт, ноутбук, таблица).</li>
+</ul>
+<hr />
+<h3 id="2-api-">Занятие 2 — API и архитектура мини-ИС<a class="headerlink" href="#2-api-" title="Permanent link">&para;</a></h3>
+<p><strong>Цели:</strong></p>
+<ul>
+<li>создать структуру проекта (папки, базовые файлы);</li>
+<li>реализовать API для расчёта ROI, TCO, Payback Period;</li>
+<li>разработать архитектуру (контроллер → сервис → модель);</li>
+<li>загрузить проект в GitHub (первый рабочий вариант).</li>
+</ul>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>первый рабочий эндпоинт (хотя бы один метод расчёта);</li>
+<li>архитектурная схема (PlantUML или Mermaid);</li>
+<li>репозиторий на GitHub с кодом и базовым README.</li>
+</ul>
+<p><strong>Демонстрация:</strong></p>
+<ul>
+<li>вызов API (через браузер, curl или Postman);</li>
+<li>пример JSON с результатами расчёта;</li>
+<li>просмотр коммитов и структуры репозитория.</li>
+</ul>
+<hr />
+<h3 id="3-docker">Занятие 3 — Анализ чувствительности, отчёт, Docker<a class="headerlink" href="#3-docker" title="Permanent link">&para;</a></h3>
+<p><strong>Цели:</strong></p>
+<ul>
+<li>реализовать сценарии анализа чувствительности (±20% ключевых параметров);</li>
+<li>сформировать HTML/PDF‑отчёт;</li>
+<li>создать <code>Dockerfile</code> и при необходимости <code>docker-compose.yml</code>;</li>
+<li>протестировать сборку и запуск сервиса в контейнере.</li>
+</ul>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>рабочий Docker‑контейнер;</li>
+<li>отчёт (HTML и, опционально, PDF);</li>
+<li>сценарный анализ с несколькими вариантами.</li>
+</ul>
+<p><strong>Демонстрация:</strong></p>
+<ul>
+<li>запуск контейнера;</li>
+<li>демонстрация сгенерированного отчёта;</li>
+<li>показ сценарного анализа.</li>
+</ul>
+<hr />
+<h3 id="4">Занятие 4 — Финальная сборка и презентации<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p><strong>Цели:</strong></p>
+<ul>
+<li>выполнить итоговое тестирование;</li>
+<li>оформить кейс (описание клиента, задачи, решений);</li>
+<li>подготовить финальную презентацию;</li>
+<li>провести питч перед группой и преподавателем.</li>
+</ul>
+<p><strong>Демонстрация:</strong></p>
+<ul>
+<li>рабочая система (интерфейс или API);</li>
+<li>сравнение «локальная vs облачная» модель;</li>
+<li>финальный доклад команды.</li>
+</ul>
+<hr />
+<h2 id="_8">Финальная презентация<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>Финальная мини-презентация строится по структуре:</p>
+<ul>
+<li>название проекта;</li>
+<li>ситуация клиента и его боль;</li>
+<li>исходные данные и допущения;</li>
+<li>архитектура InvestCalc;</li>
+<li>основные результаты расчётов;</li>
+<li>анализ чувствительности;</li>
+<li>выводы (что выгоднее: локальная или облачная модель, при каких условиях);</li>
+<li>демонстрация работающего прототипа.</li>
+</ul>
+<hr />
+<h2 id="_9">Критерии оценивания<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p><strong>Бизнес-логика и расчёты — 3 балла</strong> </p>
+<ul>
+<li>корректная реализация формул (по ЛР6);</li>
+<li>наличие локального и облачного сценария;</li>
+<li>реализованный анализ чувствительности.</li>
+</ul>
+<p><strong>API, интерфейс и архитектура — 2 балла</strong></p>
+<ul>
+<li>чистая и понятная структура проекта;</li>
+<li>реализованы ключевые эндпоинты;</li>
+<li>присутствует архитектурная диаграмма (PlantUML / Mermaid / C4 и др.).</li>
+</ul>
+<p><strong>Docker — 1 балл</strong></p>
+<ul>
+<li>система запускается одной (или несколькими понятными) командами;</li>
+<li>контейнер собирается и запускается без ошибок.</li>
+</ul>
+<p><strong>GitHub — 1 балл</strong></p>
+<ul>
+<li>оформленный <code>README.md</code>;</li>
+<li>осмысленные коммиты;</li>
+<li>инструкция по запуску;</li>
+<li>примеры входных данных и/или запросов.</li>
+</ul>
+<p><strong>Рабочий прототип — 1 балл</strong></p>
+<ul>
+<li>есть интерфейс (web/CLI) или удобные API‑эндпоинты;</li>
+<li>работает генерация отчёта.</li>
+</ul>
+<p><strong>Презентация — 2 балла</strong></p>
+<ul>
+<li>логичная структура;</li>
+<li>визуализация ключевых результатов (таблицы, графики, схемы);</li>
+<li>понятные выводы по проекту.</li>
+</ul>
+<p><strong>Итоговое количество баллов = 10</strong></p>
+<hr />
+<h2 id="_10">Примечание для команд<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>Команды могут использовать любые инструменты, технологии, фреймворки, библиотеки и источники, которые считают необходимыми для реализации проекта, <strong>за исключением прямой помощи преподавателя при выполнении задания</strong>. 
+При описания занятий по дням, данные могут расширяться.</p>
+<p>Допустимые ресурсы включают:</p>
+<ul>
+<li>официальные документации и мануалы;</li>
+<li>форумы и сообщества, GitHub, StackOverflow;</li>
+<li>генераторы документации, линтеры, тестовые наборы;</li>
+<li>инструменты моделирования (Miro, Draw.io, Figma, PlantUML и др.);</li>
+<li>любой софт для разработки (PyCharm, VS Code, IntelliJ IDEA, Rider, WebStorm и др.);</li>
+<li>системы для командной работы (Discord, Trello, Notion и т.п.).</li>
+</ul>
+<p><strong>Языки разработки:</strong> Python, JavaScript/TypeScript, C#, Java, Go, PHP, Kotlin и любые другие по выбору команды.  </p>
+<p>Главное условие — финальный прототип должен быть:</p>
+<ul>
+<li>рабочим;</li>
+<li>запускаться с помощью Docker (если выбран Docker‑подход);</li>
+<li>достаточно прозрачным и понятным для проверки.</li>
+</ul>
 
 
 
